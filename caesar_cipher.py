@@ -26,10 +26,10 @@ def main():
             try:
                 shift = int(input("Enter shift value (0-25): "))
                 if not (0 <= shift <= 25):
-                    print("Shift must be between 0 and 25.")
+                    print("Shift must be between 0 and 25. Try again")
                     continue
             except ValueError:
-                print("Invalid shift. Please enter a number.")
+                print("Invalid shift!,Try again. Please enter a number between (0-25).")
                 continue
 
             if choice == 'E':
